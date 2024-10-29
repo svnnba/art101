@@ -1,6 +1,6 @@
 // index.js - purpose and description here
-// Author: Seven Mohamoud
-// Date: Oct 29, 2024
+// Author: Your Name
+// Date:
 
 // Constants
 
