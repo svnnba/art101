@@ -1,25 +1,26 @@
 // index.js - purpose and description here
 // Author: Your Name
-// Date:
+// Date: Nov 12, 2024
 
 // Constants
 
 // Functions
 
-myTransport = ["Mini Cooper S", "skateboard", "walking", "rides from friends"];
 
+function isEven(x) {
+  return (x % 2 == 0);
+}
+// test function
+console.log("Is 1 even? ", isEven(1));
+console.log("Is 2 even? ", isEven(2));
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-myMainRide = {
-  make: "Mini",
-  model: "Mini Cooper S",
-  color: "Chili Red",
-  year: 2003,
-  age: function(){
-      return 2024 - this.year; }}
+array = [26, 367,1401, 2549, 3680, 10000]
+console.log("My aray", array);
 
+var result = array.map (isEven);
+console.log("Test of evenness of array:", result);
+var result = array.map(function(x){
+  return x ** 0.5;
+})
 
-      document.writeln("Kinds of transport I use: ", myTransport, "</br>")
-
-      document.writeln("My Main Ride: <pre>",
-        JSON.stringify(myMainRide, null, '\t'), "</pre>" );
+console.log ("Squareroot of array:", result); 
