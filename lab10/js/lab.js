@@ -1,25 +1,27 @@
 // index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Author: Seven Mohamoud
+// Date: 11/21/24
 
 // Constants
 
 // Functions
 
-myTransport = ["Mini Cooper S", "skateboard", "walking", "rides from friends"];
+function generateRandomText() {
+  const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+  const min = 3;
+  const max = 100;
+  const randLen = Math.floor(Math.random() * (max - min + 1)) + min;
+  // Get a random starting index to slice the Lorem Ipsum text
+  const randStart = Math.floor(Math.random() * (text.length - randLen + 1));
+  // Generate the random Lorem Ipsum-like text
+  return text.slice(randStart, randStart + randLen);
+}
 
+// click listener for button
+$("#make-convo").click(function(){
+});
+// get new fake dialogue
+const newText = generateRandomText();
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-myMainRide = {
-  make: "Mini",
-  model: "Mini Cooper S",
-  color: "Chili Red",
-  year: 2003,
-  age: function(){
-      return 2024 - this.year; }}
-
-
-      document.writeln("Kinds of transport I use: ", myTransport, "</br>")
-
-      document.writeln("My Main Ride: <pre>",
-        JSON.stringify(myMainRide, null, '\t'), "</pre>" );
+// append a new div to our output div
+$("#output").append('<div class="text"><p>' + newText + '</p></div>');
