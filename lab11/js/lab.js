@@ -1,25 +1,23 @@
 // index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Author: Seven Mohamoud
+// Date: 11/21/24
 
 // Constants
 
 // Functions
 
-myTransport = ["Mini Cooper S", "skateboard", "walking", "rides from friends"];
+// Sorts the characters of a string in alphabetical order.
+function sortString(inputString) {
+  // We have to convert our string to an array and back again to sort it
+  return inputString.split('').sort().join('');
+}
+// click listener for button
+$("#submit").click(function(){
+});
 
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-myMainRide = {
-  make: "Mini",
-  model: "Mini Cooper S",
-  color: "Chili Red",
-  year: 2003,
-  age: function(){
-      return 2024 - this.year; }}
-
-
-      document.writeln("Kinds of transport I use: ", myTransport, "</br>")
-
-      document.writeln("My Main Ride: <pre>",
-        JSON.stringify(myMainRide, null, '\t'), "</pre>" );
+// get value of input field
+const userName = $("#user-name").val();
+// now let's sort it
+userNameSorted = sortString(userName);
+// append a new div to our output div
+$("#output").html('<div class="text"><p>' + userNameSorted + '</p></div>');
