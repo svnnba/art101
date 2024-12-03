@@ -17,20 +17,20 @@ $(document).ready(function() {
         debugger
         oneLongString += `<div class="fizzbuzz-item">FizzBuzzCrash</div>`; // FizzBuzz for multiples of 105
       }else if (i % 21 === 0) {
-        oneLongString += <div class="fizzbuzz-item">FizzCrash</div>; // Fizz for multiples of 21
+        oneLongString += `<div class="fizzbuzz-item">FizzCrash</div>`; // Fizz for multiples of 21
       }else if (i % 35 === 0) {
-        oneLongString += <div class="fizzbuzz-item">BuzzCrash</div>; // Fizz for multiples of 35
+        oneLongString += `<div class="fizzbuzz-item">BuzzCrash</div>`; // Fizz for multiples of 35
       }else if (i % 15 === 0) {
-        oneLongString += <div class="fizzbuzz-item">FizzBuzz</div>; // Fizz for multiples of 15
+        oneLongString += `<div class="fizzbuzz-item">FizzBuzz</div>`; // Fizz for multiples of 15
       }else if (i % 3 === 0) {
-        oneLongString += <div class="fizzbuzz-item">Fizz</div>; // Fizz for multiples of 3
+        oneLongString += `<div class="fizzbuzz-item">Fizz</div>`; // Fizz for multiples of 3
       } else if (i % 5 === 0) {
         debugger
-        oneLongString += <div class="fizzbuzz-item">Buzz</div>; // Buzz for multiples of 5
+        oneLongString += `<div class="fizzbuzz-item">Buzz</div>`; // Buzz for multiples of 5
       } else if (i % 7 === 0) {
-        oneLongString += <div class="fizzbuzz-item">Crash</div>; // Crash for multiples of 7
+        oneLongString += `<div class="fizzbuzz-item">Crash</div>`; // Crash for multiples of 7
       } else {
-        oneLongString += <div class="fizzbuzz-item">${i}</div>; // Regular number if not a multiple of the above
+        oneLongString += `<div class="fizzbuzz-item">${i}</div>`; // Regular number if not a multiple of the above
       }
     }
 
